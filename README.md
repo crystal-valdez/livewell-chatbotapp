@@ -42,7 +42,7 @@ I am a 25 year old female. I am looking for a new birthcontrol medication. I hav
 ```
 
 
-## Features
+## Backend Features
 
 ### 1. ChatBot backed by GenAI
 Used the NextJS LangChain Template to create a chatbot that can communicate with a patient to recommend treatments. Uses Open-AI's GPT-3.5 Turbo Model. 

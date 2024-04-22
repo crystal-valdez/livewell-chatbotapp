@@ -111,7 +111,7 @@ export function ChatWindow(props: {
       <h2 className={`${messages.length > 0 ? "" : "hidden"} text-xl`}></h2>
       {messages.length === 0 ? emptyStateComponent : ""}
       <div
-        className="flex flex-col-reverse overscroll-x-auto w-full" //text inside the container 
+        className="flex flex-col-reverse overscroll-x-auto w-full"  
         ref={messageContainerRef}
       >
         {messages.length > 0 ? (

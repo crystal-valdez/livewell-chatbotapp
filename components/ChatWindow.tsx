@@ -1,7 +1,7 @@
 "use client";
 
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { Send } from "react-feather";
 
 import { useChat } from "ai/react";
@@ -12,7 +12,7 @@ import type { AgentStep } from "langchain/schema";
 import { ChatMessageBubble } from "@/components/ChatMessageBubble";
 import { UploadDocumentsForm } from "@/components/UploadDocumentsForm";
 import { IntermediateStep } from "./IntermediateStep";
-import PhotoUpload from './UploadPhotos';
+import PhotoUpload from "./UploadPhotos";
 
 export function ChatWindow(props: {
   endpoint: string,
@@ -70,7 +70,6 @@ export function ChatWindow(props: {
     }
     if (!showIntermediateSteps) {
       handleSubmit(e);
-    // Some extra work to show intermediate steps properly
     } else {
       setIntermediateStepsLoading(true);
       setInput("");
@@ -86,7 +85,6 @@ export function ChatWindow(props: {
       const json = await response.json();
       setIntermediateStepsLoading(false);
       if (response.status === 200) {
-        // Represent intermediate steps as system messages for display purposes
         const intermediateStepMessages = (json.intermediate_steps ?? []).map((intermediateStep: AgentStep, i: number) => {
           return {id: (messagesWithUserReply.length + i).toString(), content: JSON.stringify(intermediateStep), role: "system"};
         });

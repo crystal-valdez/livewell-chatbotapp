@@ -128,7 +128,7 @@ export function ChatWindow(props: {
 
       {messages.length === 0 && ingestForm}
 
-      <form onSubmit={sendMessage} className="flex flex-col place-items-end h-2 translate-y-6" > //
+      <form onSubmit={sendMessage} className="flex flex-col place-items-end h-2 translate-y-6" >
         <div>
           {intemediateStepsToggle}
         </div>

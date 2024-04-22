@@ -1,8 +1,8 @@
 import React, { useState, ChangeEvent } from 'react';
 
 const PhotoUpload: React.FC = () => {
-  const [file, setFile] = useState<File | null>(null);  // File state
-  const [previewUrl, setPreviewUrl] = useState<string | null>(null);  // Image preview URL state
+  const [file, setFile] = useState<File | null>(null);  
+  const [previewUrl, setPreviewUrl] = useState<string | null>(null);  
 
   const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files ? event.target.files[0] : null;
@@ -12,10 +12,10 @@ const PhotoUpload: React.FC = () => {
       );
       
       reader.onload = () => {
-        setPreviewUrl(reader.result as string);  // Set the preview URL to the result of the FileReader
+        setPreviewUrl(reader.result as string);  
       };
 
-      reader.readAsDataURL(file);  // Read the file as a Data URL for preview
+      reader.readAsDataURL(file);  
     }
   };
 

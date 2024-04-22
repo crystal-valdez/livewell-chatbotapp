@@ -1,5 +1,4 @@
 import { ChatWindow } from "@/components/ChatWindow";
-import { StatusBar } from "expo-status-bar";
 
 export default function Home() {
   const InfoCard = (
@@ -12,7 +11,6 @@ export default function Home() {
 
   return (
   <div>
-    <StatusBar style="auto" />
     <ChatWindow
       endpoint="api/chat"
       emoji="🩺"

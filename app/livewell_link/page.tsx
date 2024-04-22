@@ -1,15 +1,12 @@
 import { ChatWindow } from "@/components/ChatWindow";
-import StatusBar from '@/components/StatusBar';
+import StatusBar from "@/components/StatusBar";
 
-//named to to like ChatBot 
-
-// components/ChatInterface.tsx
-import React from 'react';
+import React from "react";
 
 const ChatInterface = () => {
   const EmptyStateComponent = (
     <div className="object-bottom text-center text-gray-500">
-      Welcome to the Doctor's Office! 
+      Welcome to the Doctor! 
     </div>
   );
   return (
@@ -36,13 +33,6 @@ const ChatInterface = () => {
             emptyStateComponent={EmptyStateComponent}
           />
         </div>
-       
-       {/* <img
-              src="images/doctor-avatar.png"
-              className="h-12 w-12 rounded-full"
-              /> */}
-        
-
       </div>      
     </div>
   );

@@ -1,0 +1,45 @@
+/* StatusBar.module.css */
+.statusBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 12px;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    color: black;
+    width: 100%;
+    border-radius: 20px;
+    position: absolute;
+    transform: translateX(50%);
+    transform: translateY(15%);
+}
+
+.leftItems, .rightItems {
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    margin: 0 5px;
+}
+
+.batteryIcon {
+    width: 20px;
+    height: 10px;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    border: 1px solid #666;
+    border-radius: 4px;
+}
+
+.batteryLevel {
+    width: 70%; /* You can dynamically change this width in React */
+    height: 100%;
+    background-color: #000000;
+    border-radius: 2px;
+    position: left;
+    align-items: left;
+    display: flex;
+}

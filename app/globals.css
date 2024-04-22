@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: #f8f8f8;
+  background: #F5F1FC;
+}
+
+body input,
+body textarea {
+  color: black;
+}
+
+a {
+  color: #6b51dd;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+}
+
+p {
+  margin: 4px 0;
+}
+
+code {
+  color: #ffa500;
+}
+
+li {
+  padding: 4px;
+}
+
+@font-face {
+  font-family: 'VelinoText';
+  font-style: normal;
+  font-weight: 700; /* Bold */
+  src: url('/fonts/VelinoText-Bold.otf') format('opentype');
+}
+

@@ -14,6 +14,9 @@ module.exports = {
         'custom-purple': '#E8F2FF',
         'apple-blue':'#1F8AFF'
       },
+      fontSize: {
+        '2xs': '.625rem',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

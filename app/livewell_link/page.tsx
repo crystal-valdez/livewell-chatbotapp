@@ -26,7 +26,7 @@ const ChatInterface = () => {
           <span className=" text-xs text-black">active now</span>
         </div>
         {/* ChatWindow component */}
-        <div className="overscroll-x-none overflow-y-auto text-xs object-bottom px-2">
+        <div className="overscroll-x-none overflow-y-auto object-bottom">
           <ChatWindow
             endpoint="api/chat"
             placeholder="How is your health today?"

@@ -107,7 +107,7 @@ export function ChatWindow(props: {
   }
 
   return (
-    <div className={`h-[55vh] w-[100%] overscroll-x-none rounded${(messages.length > 0 ? "border" : "")}`} >
+    <div className={`h-[70vh] w-[100%] overscroll-x-none rounded${(messages.length > 0 ? "border" : "")}`} >
       <h2 className={`${messages.length > 0 ? "" : "hidden"} text-xl`}></h2>
       {messages.length === 0 ? emptyStateComponent : ""}
       <div
@@ -134,7 +134,7 @@ export function ChatWindow(props: {
         </div>
         <div className="w-full h-full relative">
           <input
-            className="w-full h-full resize-none rounded-full border border-slate-900/10 bg-white pl-6 pr-24 py-[25px] text-black placeholder:text-slate-400 focus:border-violet-500 focus:outline-none focus:ring-4 focus:ring-violet-500/10 shadow-[0_10px_40px_0px_rgba(0,0,0,0.15)]"
+            className="w-full h-full resize-none rounded-full border border-slate-900/10 bg-white pl-6 pr-24 py-[25px] text-black text-2xs placeholder:text-slate-400 focus:border-violet-500 focus:outline-none focus:ring-4 focus:ring-violet-500/10 shadow-[0_10px_40px_0px_rgba(0,0,0,0.15)]"
             value={input}
             placeholder={placeholder ?? "I have a health problem I'd like to discuss"}
             onChange={handleInputChange}

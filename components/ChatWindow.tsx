@@ -107,7 +107,7 @@ export function ChatWindow(props: {
   }
 
   return (
-    <div className={`h-[70vh] w-[100%] overscroll-x-none rounded${(messages.length > 0 ? "border" : "")}`} >
+    <div className={`h-[68vh] w-[100%] overscroll-x-none rounded${(messages.length > 0 ? "border" : "")}`} >
       <h2 className={`${messages.length > 0 ? "" : "hidden"} text-xl`}></h2>
       {messages.length === 0 ? emptyStateComponent : ""}
       <div
